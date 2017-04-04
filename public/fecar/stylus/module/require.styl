@@ -1,0 +1,22 @@
+
+
+// label中require样式，提示为必填
+// 注意是require不是required，一开始就这么使用后面没发改了
+
+form
+	label
+		white-space nowrap
+
+		&::after
+			content "*"
+			color transparent
+
+			width 0
+			height 0
+
+			position relative
+			left 3px
+			top 2px
+
+		&.require::after
+			color red

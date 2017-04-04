@@ -1,0 +1,146 @@
+@require "./config/*"
+
+@require "./atomic/*"
+
+@require "./module/*"
+
+@require "./modify/*"
+
+
+html
+    width 100%;
+    
+.report
+    width 740px;
+    margin 0 auto;
+    
+    font-family "microsoft YaHei";
+    
+   
+    h1
+        margin 0 auto;
+        
+        font-size 34px;
+        color #3e3a39;
+        font-weight normal;
+        text-align center;
+        
+    &-box
+
+        table
+            width 100%;
+            
+            border-collapse collapse;
+            border-spacing 0;
+            
+            tr
+                border-bottom 1px solid #000;
+                height 25px;
+                line-height 25px;
+                
+                td
+                    padding 0;
+                    margin 0;
+                    
+                    font-size 12px;
+                    padding-left 12px;
+                    border-right 1px solid #000;
+                    box-sizing border-box;
+                    color #464241;
+                    
+                    &.tt
+                        font-size 12px;
+                        color #0f0e0e;
+        .carinfo
+            border 1px solid #000;
+            
+            tr
+                border-bottom none;
+                
+                td
+                    border-right none;
+                    &.noborder
+                        border-bottom none;
+                
+            .imgbox
+                padding-left: 0;
+                width: 200px;
+                height: 130px;
+            
+                border-right none;
+                
+                img 
+                    display block;
+                    margin: 0 auto;
+                    object-fit fill;
+                    width 180px;
+                    height 110px;
+                    
+            .txtbox
+                padding-left 0;
+                
+                margin 0;
+                padding 0;
+                
+                border-collapse collapse;
+
+                
+                td
+                    width 17%
+                    border-bottom 1px solid #000;
+                    border-left 1px solid #000;
+            
+            table
+                border none;
+        
+        .intro
+            border-left 1px solid #000;
+            border-top 1px solid #000;
+
+        .config
+            border-left 1px solid #000;
+            border-top 1px solid #000;
+            
+            td
+                width: 123px;
+                
+                &.ct
+                    padding 12px;
+                    
+                    font-size 12px;
+                    line-height 20px;
+                    box-sizing: border-box;
+        .abnormal
+            border 1px solid #000;
+            tr
+                border-bottom none;
+                td   
+                    &.ct
+                        padding 12px;
+                        
+                        vertical-align top !important;
+                        line-height 20px;
+                        border-right none;
+
+
+    .title
+        position relative;
+        padding-left 11px;
+        
+        font-size 18px;
+        font-weight normal;
+        color #ea5504;
+        
+        height 20px;
+        
+        &::before
+            content '';
+            position absolute;
+            top 3px;
+            left 0;
+            display inline-block;
+            
+            width 6px;
+            height 20px;
+            background #ea5504;
+            

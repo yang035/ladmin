@@ -1,0 +1,36 @@
+{
+    "status": "1",
+    "msg": "提示消息",
+    "data": [
+        {
+            "hour": "00",
+            "total": 100,
+            "new": 20,
+            "new_percent": "20%",
+            "valid_num": 20,
+            "valid_percent": "20%",
+            "best_num": 10,
+            "best_percent": "30%",
+            "ready_check_num": 200,
+            "ready_check_percent": "10%",
+            "up_shelf_num": 100,
+            "first_auction_num": 200,
+            "first_auction_percent": "20%"
+        },
+        {
+            "hour": "01",
+            "total": 100,
+            "new": 20,
+            "new_percent": "20%",
+            "valid_num": 20,
+            "valid_percent": "20%",
+            "best_num": 10,
+            "best_percent": "30%",
+            "ready_check_num": 200,
+            "ready_check_percent": "10%",
+            "up_shelf_num": 200,
+            "first_auction_num": 300,
+            "first_auction_percent": "25%"
+        }
+    ]
+}

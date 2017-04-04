@@ -1,0 +1,86 @@
+
+
+// 消息推送和列表相关
+
+.m-message-item
+	display block
+
+	margin 20px 8% 0
+	padding-bottom 20px
+
+	color #bbb
+	line-height 1.5
+
+	border-bottom 1px solid #424d52
+
+	&:last-of-type
+		border-bottom 1px
+
+	.tt
+		font-size 14px
+
+		position relative
+
+		&::before
+			content "*"
+			color transparent
+
+			width 0
+			height 0
+
+			margin-right 3px
+
+			font-size 16px
+
+			position absolute
+			top ((14px * 1.5 - 16px) / 2)
+			left -10px
+
+			display none
+
+	.time
+		margin-bottom 8px
+		font-size 12px
+
+	.ct
+		font-size 13px
+
+	&.active
+		color #e7e7e7
+
+		.tt::before
+			display inline-block
+			color red
+
+	&:hover
+		color #72afd2
+
+
+.m-message-pop
+	width 200px
+
+	padding 30px 20px 20px
+
+	font-size 14px
+	line-height 1.5
+
+	border 1px solid #72afd2
+	background-color #fff
+	cursor pointer
+
+	position fixed
+	bottom 3px
+	right 3px
+
+	display none
+
+	p:hover
+		color #72afd2
+
+	&.active
+		display block
+
+	.close
+		position absolute
+		top 10px
+		right 10px

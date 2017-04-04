@@ -1,0 +1,93 @@
+
+
+// label模拟radio，注意 ":checked +" 这样的选择器
+
+label.m-radio
+	display inline-block
+
+	height 27px
+
+	margin 4.5px 12px 0 0
+	padding-left 20px
+
+	font-size 13px
+	font-weight normal
+	line-height 27px
+
+	cursor pointer
+	overflow hidden
+
+	position relative
+
+	&::before
+		content ""
+		width 16px
+		height 16px
+
+		border 1px solid #ccc
+		box-sizing border-box
+		border-radius 50%
+
+		position absolute
+		top ((27px - 18px) / 2)
+		left 0
+
+	span::after
+		content ""
+
+		width 10px
+		height 10px
+
+		position absolute
+		top ((27px - 12px) / 2)
+		left (((16px - 12px) / 2) + 1px)
+
+		border-radius 50%
+		background-color transparent
+
+	input[type=radio]
+		width 1px
+		height 1px
+
+		position absolute
+		bottom 0
+		left 0
+
+		opacity 0
+
+		&:checked + span::after
+			background-color #3c8dbc
+
+	input[disabled] + span
+		cursor default
+
+
+	&.intd
+		width 100%
+		height 100%
+
+		margin 0
+		padding 0
+
+		&::before
+			display none
+
+		span::after
+			width 20px
+			height 12px
+
+			border-left 2px solid transparent
+			border-bottom 2px solid transparent
+			border-radius 0
+
+			top 50%
+			left 50%
+			margin-top -6px
+			margin-left -10px
+
+			transform rotate(-45deg)
+
+		input[type=radio]
+			&:checked + span::after
+				background-color transparent
+				border-color #3c8dbc

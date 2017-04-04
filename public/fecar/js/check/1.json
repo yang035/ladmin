@@ -1,0 +1,22 @@
+{
+    "status": "1",
+    "type": "1",
+    "info": "查询成功！",
+    "data": {
+        "text": "【迈迈车】尊敬的用户，您好！恭喜您获得由迈迈车提供的成交礼包京东E卡经典卡一份！预约检测时间:<div class='appointmentTime' style='display:inline'>12334567890987</div>, 预约检测地点:<div class='appointmentAddr' style='display:inline'>123456789</div>, 品牌:<div class='brand' style='display:inline'>12334567890987</div>, 车系:<div class='carSeries' style='display:inline'>123456789</div> ,竞拍完成时间:<div class='auction' style='display:inline'>123456789</div>，预约到店时间:<div class='arrivalTime' style='display:inline'>123456789</div>，车辆所在地:<div class='carAddr' style='display:inline'>123456789</div>，门店名称:<div class='storeName' style='display:inline'>123456789</div>,门店地址:<div class='storeAddr' style='display:inline'>123456789</div>。2017年1月1日起，朋友e车品牌升级，正式更名为“迈迈车”。感谢您一直以来的关注与支持！",
+        "code": [
+            {
+                "appointmentTime": "2017.01.08",
+                "appointmentAddr": "福州",       
+                "brand": "大众",
+                "carSeries": "宝马",
+                "auction": "2017.01.09",
+                "arrivalTime": "2017.01.09",
+                "carAddr": "福州",
+                "storeName": "朋友e车",
+                "storeAddr": "福新路"
+                
+            }
+        ]
+    }
+}

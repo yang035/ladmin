@@ -1,0 +1,211 @@
+
+
+// tab标签页相关
+
+cl-bg = #fff
+cl-bg-gray = #e2e4ea
+cl-bd = #ccc
+cl-hover = #d0d0d0
+
+
+.m-tab
+	width 100%
+	height 30px
+
+	margin-bottom -1px
+
+	position relative
+	z-index 1
+
+	overflow hidden
+
+	.wrap
+		height 100%
+
+		font-size 12px
+		line-height 29px
+
+		background-color cl-bg-gray
+
+		border-bottom 1px solid cl-bd
+		box-sizing border-box
+
+		clear-fix()
+
+	&-nav
+		float left
+		width 30px
+
+		text-align center
+		color #999
+
+		cursor default
+
+		&.next
+			float right
+
+		&:hover
+			color inherit
+			cursor pointer
+
+	&-close
+		float left
+		width 30px
+
+		text-align center
+		color #999
+
+		&:hover
+			color inherit
+			cursor pointer
+
+	&-refresh
+		float left
+		width 30px
+
+		margin-right 10px
+
+		text-align center
+		color #999
+
+		&:hover
+			color inherit
+			cursor pointer
+
+
+	&-wrap
+		float left
+		width calc(100% - 130px)
+
+		overflow-y hidden
+
+		.list
+			width 100%
+			height 50px
+
+			overflow-x scroll
+			overflow-y hidden
+
+			white-space nowrap
+			word-spacing -6px
+
+			li
+				display inline-block
+
+				width 90px
+				height 29px
+
+				padding 0 20px 0 10px
+
+				word-spacing normal
+				text-overflow()
+
+				background-color cl-bg-gray
+				background-clip padding-box
+				border-bottom 1px solid cl-bd
+				box-sizing content-box
+				cursor pointer
+
+				position relative
+				z-index 3
+
+				&::before
+					content ""
+					display block
+
+					width 1px
+					height 100%
+
+					position absolute
+					top 0
+					left 0
+
+					background-color cl-bd
+
+				&:last-of-type
+					&::after
+						content ""
+						display block
+
+						width 1px
+						height 100%
+
+						position absolute
+						top 0
+						right 0
+
+						background-color cl-bd
+
+				.close
+					width 20px
+					height 20px
+
+					font-size 14px
+					line-height 20px
+					text-align center
+
+					position absolute
+					top 50%
+					right 1px
+					margin-top -10px
+
+					display none
+
+				.loading
+					width 20px
+					height 20px
+
+					font-size 14px
+					line-height 20px
+					text-align center
+
+					position absolute
+					top 50%
+					right 1px
+					margin-top -10px
+
+					opacity 0.6
+
+					animation loading-rotate 1s linear 0s infinite
+
+					display none
+
+					@keyframes loading-rotate{
+						0%{
+							transform rotate(0deg)
+						}
+						25%{
+							transform rotate(90deg)
+						}
+						50%{
+							transform rotate(180deg)
+						}
+						75%{
+							transform rotate(270deg)
+						}
+						100%{
+							transform rotate(360deg)
+						}
+					}
+
+				&.active
+					background-color cl-bg
+					border-bottom-color cl-bg
+
+					z-index 1
+
+					.close
+						display block
+
+				&.loading
+					&.active
+						.close
+							display none
+					.loading
+						display block
+
+				&:hover
+					.close
+						display block !important
+					.loading
+						display none

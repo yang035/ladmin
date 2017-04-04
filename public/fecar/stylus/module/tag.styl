@@ -1,0 +1,64 @@
+
+
+// tag小标签
+
+.tag
+	display inline-block
+
+	height 34px
+
+	margin-bottom 6px
+
+	font-size 14px
+	font-weight 400
+	line-height 16px
+	text-align center
+	white-space nowrap
+	vertical-align middle
+
+	overflow hidden
+
+	position relative
+
+	>span
+		margin-right 6px
+		padding 3px 0 3px 9px
+
+		border 1px solid transparent
+		border-radius 4px
+
+		background-color: #f4f4f4;
+		color: #444;
+		border-color: #ddd;
+
+		display none
+
+		&:hover
+			color: #333;
+			background-color: #e7e7e7;
+			border-color: #adadad;
+
+		>span
+			padding 6px
+
+			color #ccc
+
+			touch-action manipulation
+			cursor pointer
+			user-select none
+
+			&:hover
+				color #f56954
+
+	input[type=checkbox]
+		width 1px
+		height 1px
+
+		position absolute
+		bottom 0
+		left 0
+
+		opacity 0
+
+		&:checked + span
+			display inline-block

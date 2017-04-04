@@ -1,0 +1,45 @@
+
+
+// 车辆审核右侧导航
+
+.aside-right-nav
+	position fixed
+	top 50%
+	right 0
+
+	transform translateX(100%) translateY(-50%)
+	transition transform 0.5s
+
+	ul
+		line-height 3em
+
+		border 1px solid rgb(247, 191, 101)
+		border-top-left-radius 6px
+		border-bottom-left-radius 6px
+		background-color #fff
+
+		li
+			padding 0 2em
+
+			border-bottom 1px solid #eee
+
+			&:last-of-type
+				border-bottom none
+
+	>.btn
+		width 30px
+		height 100px
+
+		position absolute
+		top 50%
+		left 0
+
+		transform translateX(-100%) translateY(-50%)
+		opacity 0.7
+
+
+	&:hover
+		transform translateX(0) translateY(-50%)
+
+		>.btn
+			opacity 0

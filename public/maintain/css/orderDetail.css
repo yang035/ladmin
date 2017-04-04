@@ -1,0 +1,87 @@
+html, body, a, ul, li, div, em, span, h1, p{ padding: 0; margin: 0; -webkit-backface-visibility: hidden; -webkit-tap-highlight-color: transparent; }
+
+ul, li { list-style: none; }
+
+img { border: none; }
+
+a { text-decoration: none; }
+
+a:hover { text-decoration: none; }
+
+body { font-size: 14px; font-family: "PingFang SC", arial; background: white; width: 100%; overflow-x: hidden; }
+
+h1 { margin: 15px 15px 5px; font-size: 18px; color: #333333; }
+
+.body_ebebeb { background: #ebebeb; }
+
+.clearfloat:after { display: block; content: ""; height: 0; line-height: 0; overflow: hidden; clear: both; }
+
+.left { float: left; }
+
+.right { float: right; }
+
+em { font-style: normal; }
+
+.to_top { position: fixed; width: 40px; height: 40px; position: fixed; right: 10px; bottom: 10px; background: url(../img/arr_5.png) no-repeat center center rgba(0, 0, 0, 0.5); border-radius: 50%; -webkit-border-radius: 50%; background-size: auto 24px; display: none; }
+
+.title { border-bottom: 1px solid #ececec; background: white; position: relative; -ms-touch-action: none; }
+.title .name { display: inline-block; padding: 14px 0 14px 15px; font-size: 16px; color: #333333; height: 16px; line-height: 16px; position: relative; }
+.title .name:after { width: 3px; height: 16px; top: 50%; margin-top: -8px; left: 0; background: #e60037; content: ""; position: absolute; }
+.title .note { font-size: 12px; float: right; padding: 14px 10px 14px 0; color: #999999; height: 16px; line-height: 16px; }
+.title .tit { display: inline-block; padding: 0 0 0 15px; font-size: 16px; color: #333333; height: 16px; line-height: 16px; position: relative; }
+.title .tit:after { width: 3px; height: 16px; top: 50%; margin-top: -8px; left: 0; background: #e60037; content: ""; position: absolute; }
+.title .des { display: block; font-size: 12px; color: #999999; margin: 5px 15px 5px; }
+.title .arrow { position: absolute; width: 30px; height: 30px; top: 50%; margin-top: -15px; right: 0; background: url(../img/icon_arrow3.png) no-repeat center center; background-size: auto 14px; }
+.title .arrow.show { background-image: url(../img/icon_arrow1.png); right: 3px; }
+
+.carOutling { background: white; padding: 14px; position: relative; }
+.carOutling .logo, .carOutling .text { display: table-cell; vertical-align: middle; }
+.carOutling .logo { width: 60px; height: 60px; font-size: 0; }
+.carOutling .logo img { width: 100%; height: 100%; border-radius: 50%; -webkit-border-radius: 50%; }
+.carOutling .text { display: table-cell; color: #333333; }
+.carOutling .text p { margin-left: 10px; font-size: 14px; line-height: 1.5; }
+.carOutling .text p.name { font-size: 18px; }
+.carOutling .text p + p { margin-top: 2px; }
+
+.tipDes { background: white; padding: 12px 15px; font-size: 14px; line-height: 1.75; color: #333333; }
+.tipDes .tit, .tipDes .text { display: inline; }
+.tipDes .tit { color: white; background: #4ad562; padding: 0 5px; border-radius: 3px; -webkit-border-radius: 3px; }
+
+.detail { padding: 0 15px; background: white; border-top: 1px solid #ececec; border-bottom: 1px solid #ececec; }
+.detail li { color: #333333; border-bottom: 1px solid #ececec; position: relative; }
+.detail li:last-child { border-bottom: none; }
+.detail li:after { width: 1px; height: 100%; left: 125px; background: #ececec; content: ""; position: absolute; top: 0; }
+.detail li > .tit, .detail li > .text { display: table-cell; vertical-align: top; padding: 10px; }
+.detail li > .tit { white-space: nowrap; padding-left: 30px; height: 20px; line-height: 20px; width: 85px; }
+.detail li > .text { padding-right: 0; }
+.detail li > .text .box { color: #999999; margin-top: 5px; line-height: 1.6; display: none; }
+.detail li > .text .tit { position: relative; }
+.detail li > .text .tit:after { background: url(../img/icon_arrow3.png) no-repeat center center; background-size: auto 14px; width: 20px; height: 30px; top: 50%; margin-top: -15px; right: 0; content: ""; position: absolute; display: none; }
+.detail li > .text .tit.show:after { background-image: url(../img/icon_arrow1.png); }
+.detail li > .text .tit.unormal { padding-left: 18px; background: url(../img/icon_warry.png) no-repeat 0 center; background-size: auto 14px; }
+.detail li > .text .tit.unormal:after { display: block; }
+.detail li.li_1 > .tit { background: url(../img/icon_car.png) no-repeat 3px 15px; background-size: auto 8px; }
+.detail li.li_2 > .tit { background: url(../img/icon_user.png) no-repeat 6px 11px; background-size: auto 16px; }
+.detail li.li_3 > .tit { background: url(../img/icon_dong.png) no-repeat 4px 14px; background-size: auto 12px; }
+.detail li.li_4 > .tit { background: url(../img/icon_set.png) no-repeat 4px 11px; background-size: auto 18px; }
+.detail li.li_5 > .tit { background: url(../img/icon_clock.png) no-repeat 6px 13px; background-size: auto 14px; }
+.detail li.li_6 > .tit { background: url(../img/icon_map.png) no-repeat 5px 11px; background-size: auto 18px; }
+.detail li.li_7 > .tit { background: url(../img/icon_edit.png) no-repeat 7px 12px; background-size: auto 16px; }
+.detail li.li_8 > .tit { background: url(../img/icon_time.png) no-repeat 7px 13px; background-size: auto 14px; }
+.detail li.li_6 > .text > .tit:after, .detail li.li_7 > .text > .tit:after, .detail li.li_8 > .text > .tit:after { display: block; }
+
+.detailList { background: white; padding: 10px 15px 0; border-bottom: 1px solid #ececec; }
+.detailList li { margin-bottom: 5px; }
+.detailList li .tit { background: whitesmoke; border-top: 1px solid #cccccc; padding: 10px; font-size: 0; letter-spacing: 0; }
+.detailList li .tit span { display: inline-block; font-size: 14px; width: 33.33333%; }
+.detailList li .tit span.minu { text-align: center; }
+.detailList li .tit span.name { text-align: right; }
+.detailList li .text { padding: 5px; }
+.detailList li .text dl { line-height: 1.6; color: #333333; }
+.detailList li .text dl dt, .detailList li .text dl dd { display: table-cell; }
+.detailList li .text dl dd { word-wrap: break-word; table-layout: fixed; }
+.detailList li .text dl dt { width: 40px; color: #666666; }
+.detailList li .text dl + dl { margin-top: 2px; }
+
+.textView { background: white; padding: 5px 14px 14px; font-size: 14px; color: #666666; line-height: 1.6; border-bottom: 1px solid #ececec;  }
+.textView p.tit { font-size: 15px; color: #333333; margin-top: 8px; }

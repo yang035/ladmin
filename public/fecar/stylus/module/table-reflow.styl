@@ -1,0 +1,35 @@
+
+
+// bootstrap 4中拷贝，暂未使用
+
+.table-reflow
+	thead
+		float left
+
+	tbody
+		display block
+		white-space nowrap
+
+	td,
+	th
+		border-top 1px solid #ee
+		border-left 1px solid #ee
+
+		&:last-child
+			border-right 1px solid #ee
+
+	tbody,
+	tfoot,
+	thead
+		&:last-child
+			tr:last-child td,
+			tr:last-child th
+				border-bottom 1px solid #ee
+
+	tr
+		float left
+
+		td,
+		th
+			display block !important
+			border 1px solid #ee
