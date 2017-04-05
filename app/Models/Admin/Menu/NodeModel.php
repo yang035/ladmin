@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Models\Menu;
+namespace App\Models\Admin\Menu;
 
 use Illuminate\Database\Eloquent\Model;
 
-class AdminNodeModel extends Model
+class NodeModel extends Model
 {
     //
     protected $table = 'admin_node';
@@ -13,6 +13,6 @@ class AdminNodeModel extends Model
     protected $dateFormat = 'U';//修改时间显示格式
 
     public function stations(){
-        return $this->belongsToMany('App\Models\Menu\AdminStationModel','admin_station_node','node_id','station_id');
+        return $this->belongsToMany('App\Models\Admin\Menu\StationModel','admin_station_node','node_id','station_id');
     }
 }

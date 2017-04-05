@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Models\System;
+namespace App\Models\Admin\System;
 
 use Illuminate\Database\Eloquent\Model;
 
-class AdminCityModel extends Model
+class CityModel extends Model
 {
     //
     protected $table = 'admin_city';//设置对应表

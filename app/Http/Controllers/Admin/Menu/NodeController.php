@@ -2,31 +2,23 @@
 
 namespace App\Http\Controllers\Admin\Menu;
 
-use App\Models\Menu\AdminNodeModel;
+use App\Repositories\Admin\NodeRepository;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class AdminNodeController extends Controller
+class NodeController extends Controller
 {
-    public function __construct()
+    protected $nodes;
+    public function __construct(NodeRepository $nores)
     {
         $this->middleware('auth');
+        $this->nodes = $nores;
     }
 
     //
     public function index(){
-//        $adminOpenCities = AdminOpenCityModel::where('id','>',0)
-//            ->orderBy('id','desc')
-//            ->take(10)
-//            ->get();
-        $adminNodes = AdminNodeModel::with('stations')->get();
-//        $aa = $adminNodes->toArray();
-//            ->where('id', '>', 1)
-//            ->orderBy('id', 'desc')
-//            ->get();
+        $adminNodes = $this->nodes->getNodeLists();
         $sss = $this->list_to_tree($adminNodes);
-//        print_r($sss);
-//        exit();
 
         return view('admin.layout')->with('tree_menu',$sss);
     }

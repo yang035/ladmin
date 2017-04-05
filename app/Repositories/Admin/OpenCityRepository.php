@@ -8,11 +8,11 @@
  */
 
 
-namespace App\Repositories;
+namespace App\Repositories\Admin;
 
-use App\Models\System\AdminOpenCityModel;
+use App\Models\Admin\System\OpenCityModel;
 
-class AdminOpenCityRepository
+class OpenCityRepository
 {
 //    protected $openCity;
 //
@@ -23,7 +23,7 @@ class AdminOpenCityRepository
 
     public function getOpenCityList()
     {
-        return AdminOpenCityModel::with('users')
+        return OpenCityModel::with('users')
 //            ->where('op_admin_id', '=', 1)
             ->orderBy('id', 'desc')
             ->get();

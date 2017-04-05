@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="/adminlte/css/font.sourcesanspro.css">
     <link rel="stylesheet" href="/plugins/layer/skin/layer.css">
     <link rel="stylesheet" href="/fecar/css/index.css">
-
+    <link rel="stylesheet" href="/plugins/datepicker/datepicker3.css">
     <link href="/inspinia/css/plugins/dataTables/datatables.min.css" rel="stylesheet">
     <link href="/inspinia/css/style.css" rel="stylesheet">
 
@@ -43,9 +43,9 @@
 
         <script class="js-be-url" type="text/plain">
 				{
-					"add": "{:U('system/city/add')}",
-					"modify": "{:U('system/city/edit')}",
-					"delete": "{:U('system/city/del')}"
+					"add": "add",
+					"modify": "edit",
+					"delete": "del"
 				}
 			</script>
         <div>
@@ -111,6 +111,9 @@
 <script src="/plugins/jQueryForm/jquery.form.min.js"></script>
 <script src="/fecar/js/main.js"></script>
 <script src="/inspinia/js/plugins/dataTables/datatables.min.js"></script>
+<script src="/plugins/datepicker/bootstrap-datepicker.js"></script>
+<script src="/plugins/datepicker/locales/bootstrap-datepicker.zh-CN.js"></script>
+<script src="/fecar/js/system/city.js"></script>
 <script>
     $(document).ready(function(){
         $('#posts-table').DataTable({

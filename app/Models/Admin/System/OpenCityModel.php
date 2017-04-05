@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Models\System;
+namespace App\Models\Admin\System;
 
 use Illuminate\Database\Eloquent\Model;
 
-class AdminOpenCityModel extends Model
+class OpenCityModel extends Model
 {
     //
     protected $table = 'admin_open_city';
@@ -14,7 +14,7 @@ class AdminOpenCityModel extends Model
 
     public function users()
     {
-        return $this->hasMany('App\Models\System\AdminUserModel', 'op_admin_id', 'id');
+        return $this->hasMany('App\Models\Admin\System\UserModel', 'op_admin_id', 'id');
     }
 
 }
