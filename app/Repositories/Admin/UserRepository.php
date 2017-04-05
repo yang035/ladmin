@@ -13,10 +13,8 @@ use App\Models\Admin\System\UserModel;
 
 class UserRepository
 {
-public function getUserLists(){
-    return UserModel::where('id','>',0)
-        ->orderBy('id','desc')
-        ->take(10)
-        ->get();
-}
+    public function getUserLists()
+    {
+        return UserModel::all();
+    }
 }

@@ -15,6 +15,7 @@ Auth::routes();
 
 Route::get('admin','Admin\Menu\NodeController@index');
 Route::get('admin/system/city/index','Admin\System\OpenCityController@index');
+Route::get('admin/system/user/index','Admin\System\UserController@index');
 Route::get('admin/system/city/add','Admin\System\OpenCityController@create');
 
 Route::get('user','Admin\System\UserController@index');

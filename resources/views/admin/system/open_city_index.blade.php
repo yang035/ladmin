@@ -1,26 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>首页</title>
-    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/adminlte/css/AdminLTE.min.css">
-    <link rel="stylesheet" href="/adminlte/css/skins/_all-skins.min.css">
-    <link rel="stylesheet" href="/adminlte/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/adminlte/css/ionicons.min.css">
-    <link rel="stylesheet" href="/adminlte/css/font.sourcesanspro.css">
-    <link rel="stylesheet" href="/plugins/layer/skin/layer.css">
-    <link rel="stylesheet" href="/fecar/css/index.css">
-    <link rel="stylesheet" href="/plugins/datepicker/datepicker3.css">
-    <link href="/inspinia/css/plugins/dataTables/datatables.min.css" rel="stylesheet">
+@extends('admin.common')
+
+@section('styles')
     <link href="/inspinia/css/style.css" rel="stylesheet">
-
-    @yield('styles')
-
-</head>
-
-<body class="hold-transition skin-blue">
-
+@stop
+@section('content')
 <div class="box">
     <div class="box-body">
 
@@ -87,6 +70,18 @@
                     </tr>
                 @endforeach
                 </tbody>
+                                <tfoot>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>城市名称</th>
+                                    <th>车检区域</th>
+                                    <th>车检时间表</th>
+                                    <th>门店地址</th>
+                                    <th>开通时间</th>
+                                    <th>状态</th>
+                                    <th>操作人</th>
+                                </tr>
+                                </tfoot>
                             </table>
                         </div>
 
@@ -100,19 +95,10 @@
 
     </div>
 </div>
-
-
-<script src="/plugins/jQuery/jquery-2.2.3.min.js"></script>
-<script src="/bootstrap/js/bootstrap.min.js"></script>
+@stop
+@section('scripts')
 <script src="/plugins/slimScroll/jquery.slimscroll.min.js"></script>
-<script src="/adminlte/js/app.js"></script>
-<script src="/plugins/layer/layer.js"></script>
-<script src="/plugins/artTemplate/template.js"></script>
-<script src="/plugins/jQueryForm/jquery.form.min.js"></script>
 <script src="/fecar/js/main.js"></script>
-<script src="/inspinia/js/plugins/dataTables/datatables.min.js"></script>
-<script src="/plugins/datepicker/bootstrap-datepicker.js"></script>
-<script src="/plugins/datepicker/locales/bootstrap-datepicker.zh-CN.js"></script>
 <script src="/fecar/js/system/city.js"></script>
 <script>
     $(document).ready(function(){
@@ -143,6 +129,4 @@
     });
 
 </script>
-
-</body>
-</html>
+@stop

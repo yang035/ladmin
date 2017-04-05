@@ -39,15 +39,10 @@ class PublicPresenter
 
         return $str;
     }
-    public function list_to_tree($object) {
+    public function list_to_tree($list) {
         // 创建Tree
         $tree = [];
-        if (is_object($object)){
-            foreach ($object as $k=> $value) {
-                $list[$k] = $value['original'];
 
-            }
-        }
         if($list) {
             // 创建基于主键的数组引用
             $refer = [];

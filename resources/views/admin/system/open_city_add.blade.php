@@ -1,11 +1,12 @@
 
 <div class="w-layer mt-lg">
+    @inject('PublicPresenter','App\Presenters\Admin\PublicPresenter')
     <form class="box-body form-horizontal js-layer-form" action="#" method="post">
         <div class="form-group">
             <label class="col-md-2 control-label require">城市名称</label>
             <div class="col-md-4">
                 <select name="id" id="city-id" class="form-control" required>
-                    {:system_city_optgroup()}
+                    {{ $PublicPresenter->system_city_optgroup() }}
                 </select>
             </div>
         </div>

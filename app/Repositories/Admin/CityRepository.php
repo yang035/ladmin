@@ -13,7 +13,8 @@ use App\Models\Admin\System\CityModel;
 
 class CityRepository
 {
-public function getCityLists(){
-    return CityModel::all();
-}
+    public function getCityLists()
+    {
+        return CityModel::all();
+    }
 }
